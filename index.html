@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+<title>Bushscript: the one script needed</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="matrix-container" aria-hidden="true"><canvas id="matrix"></canvas></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <clipPath id="sil" clipPathUnits="objectBoundingBox"><path d="M0.5063,0.0000 C0.5222,0.0000 0.5413,0.0000 0.5538,0.0024 C0.5663,0.0074 0.5746,0.0154 0.5815,0.0300 C0.5883,0.0447 0.5919,0.0691 0.5949,0.0901 C0.5980,0.1112 0.5993,0.1342 0.5997,0.1562 C0.6001,0.1783 0.5989,0.2053 0.5973,0.2224 C0.5957,0.2394 0.5906,0.2444 0.5902,0.2584 C0.5898,0.2724 0.5891,0.2915 0.5949,0.3065 C0.6007,0.3215 0.6108,0.3355 0.6250,0.3486 C0.6392,0.3616 0.6659,0.3736 0.6804,0.3846 C0.6949,0.3956 0.7035,0.3986 0.7120,0.4147 C0.7206,0.4307 0.7272,0.4557 0.7318,0.4808 C0.7364,0.5058 0.7377,0.5308 0.7397,0.5649 C0.7417,0.5990 0.7338,0.6591 0.7437,0.6851 C0.7536,0.7111 0.7822,0.7081 0.7991,0.7212 C0.8159,0.7342 0.8383,0.7432 0.8449,0.7632 C0.8515,0.7833 0.8476,0.8143 0.8386,0.8413 C0.8296,0.8684 0.8083,0.9105 0.7911,0.9255 C0.7740,0.9405 0.7516,0.9385 0.7358,0.9315 C0.7199,0.9245 0.7068,0.8984 0.6962,0.8834 C0.6857,0.8684 0.6751,0.8219 0.6725,0.8413 C0.6698,0.8608 0.7371,0.9736 0.6804,1.0000 C0.6237,1.0000 0.3890,1.0000 0.3323,1.0000 C0.2756,0.9736 0.3428,0.8608 0.3402,0.8413 C0.3376,0.8219 0.3270,0.8684 0.3165,0.8834 C0.3059,0.8984 0.2927,0.9245 0.2769,0.9315 C0.2611,0.9385 0.2387,0.9405 0.2215,0.9255 C0.2044,0.9105 0.1830,0.8684 0.1741,0.8413 C0.1651,0.8143 0.1611,0.7833 0.1677,0.7632 C0.1743,0.7432 0.1967,0.7342 0.2136,0.7212 C0.2305,0.7081 0.2591,0.7111 0.2690,0.6851 C0.2789,0.6591 0.2710,0.5990 0.2729,0.5649 C0.2749,0.5308 0.2762,0.5058 0.2809,0.4808 C0.2855,0.4557 0.2921,0.4307 0.3006,0.4147 C0.3092,0.3986 0.3178,0.3956 0.3323,0.3846 C0.3468,0.3736 0.3734,0.3616 0.3877,0.3486 C0.4019,0.3355 0.4119,0.3215 0.4177,0.3065 C0.4235,0.2915 0.4229,0.2724 0.4225,0.2584 C0.4221,0.2444 0.4169,0.2394 0.4153,0.2224 C0.4138,0.2053 0.4126,0.1783 0.4130,0.1562 C0.4134,0.1342 0.4147,0.1112 0.4177,0.0901 C0.4208,0.0691 0.4243,0.0447 0.4312,0.0300 C0.4380,0.0154 0.4463,0.0074 0.4589,0.0024 C0.4714,0.0000 0.4905,0.0000 0.5063,0.0000 Z"/></clipPath>
+</svg>
+
+<nav class="bar" aria-label="Main"><div class="container nav">
+  <a class="brand" href="#top">Bushscript</a>
+  <a href="#docs">Documentation</a>
+  <a href="https://github.com/OpenBushate/bushscript/issues">Support</a>
+  <a href="https://github.com/OpenBushate/bushscript">Github</a>
+</div></nav>
+
+<div class="stage">
+  <div class="figure">
+    <div class="photo"><img src="figure.jpg" alt="A figure in sunglasses and a black leather coat holds out a red pill in one hand and a blue pill in the other."></div>
+    <a class="pill" id="pill-red" href="#manual" aria-label="Red pill: manual installation" title="Manual installation"></a>
+    <a class="pill" id="pill-blue" href="#auto" aria-label="Blue pill: automatic installation" title="Automatic installation"></a>
+  </div>
+</div>
+
+<main>
+<header class="container hero" id="top">
+  <div class="slot" aria-hidden="true"></div>
+  <a class="btn cta lg" href="https://raw.githubusercontent.com/OpenBushate/bushscript/main/launch.bat" download="launch.bat">Download launcher</a>
+  <p class="caption more">or, <a href="#manual">manual installation</a></p>
+</header>
+
+<div class="container docs" id="docs">
+  <section id="auto">
+    <h2>Automatic setup</h2>
+    <p>One file, <code>launch.bat</code>. It installs and starts Bushscript for you. For Windows.</p>
+    <ol>
+      <li><strong>Download launch.bat.</strong> Use the Download launcher button, or run this in Command Prompt or PowerShell:</li>
+    </ol>
+    <div class="code"><pre>curl -L -o launch.bat https://raw.githubusercontent.com/OpenBushate/bushscript/main/launch.bat</pre><button class="copy">Copy</button></div>
+    <ol start="2">
+      <li><strong>Run it.</strong> Double-click <code>launch.bat</code>, or run <code>launch.bat</code> in a terminal from the same folder. Windows may ask you to confirm before it runs a downloaded file.</li>
+      <li><strong>Use Bushscript as your browser.</strong> The browser opens on its own. When you close the browser, the program ends.</li>
+    </ol>
+    <p class="caption">If your browser shows the file as text instead of saving it, right-click the button and choose Save link as. Want to read it first? <a href="https://github.com/OpenBushate/bushscript/blob/main/launch.bat">Open launch.bat on GitHub</a>.</p>
+  </section>
+
+  <section id="manual">
+    <h2>Manual installation</h2>
+    <p>One file, <code>Bushscript.java</code>. Edit it, keep it anywhere, and run it your way. You need Java and basic Java knowledge. JDK 11 or newer runs a .java file directly.</p>
+    <ol>
+      <li><strong>Download Bushscript.java.</strong> Use the button, or run:</li>
+    </ol>
+    <div class="code"><pre>curl -LO https://raw.githubusercontent.com/OpenBushate/bushscript/main/script/Bushscript.java</pre><button class="copy">Copy</button></div>
+    <div class="row">
+      <a class="btn" href="https://raw.githubusercontent.com/OpenBushate/bushscript/main/script/Bushscript.java" download="Bushscript.java">Download Bushscript.java</a>
+      <a class="btn outline" href="https://github.com/OpenBushate/bushscript/archive/refs/heads/main.zip">Everything (.zip)</a>
+    </div>
+    <ol start="2">
+      <li><strong>Change it if you like.</strong> It is a plain Java source file under the MIT license.</li>
+      <li><strong>Run it with Java.</strong> From the folder that holds the file:</li>
+    </ol>
+    <div class="code"><pre>java Bushscript.java</pre><button class="copy">Copy</button></div>
+    <ol start="4">
+      <li><strong>Use Bushscript as your browser.</strong> The browser opens, and closing it ends the program.</li>
+    </ol>
+
+    <h3>Make a Windows shortcut</h3>
+    <p>A batch file starts your manual copy with a double-click. In Notepad, paste the line below and replace <code>[USERNAME_HERE]</code> with your Windows username or student email string. If the Java file sits in a package folder, keep that folder in the path.</p>
+    <div class="code"><pre>java C:\Users\[USERNAME_HERE]\Documents\NetBeansProjects\Bushscript\src\bushscript\Bushscript.java</pre><button class="copy">Copy</button></div>
+    <p>Save it as <code>Bushscript.bat</code> with Save as type set to All Files, then double-click it.</p>
+  </section>
+
+  <section id="netbeans">
+    <h2>NetBeans setup</h2>
+    <p><span class="outline-badge">No longer recommended</span></p>
+    <p>After wide use, the maintainers recommend the setups above. If you still want it, you need NetBeans IDE and Java.</p>
+    <ol>
+      <li><strong>Create the project.</strong> Make a new NetBeans project (Ant Application) named <code>Bushscript</code>.</li>
+      <li><strong>Add the file.</strong> Copy <a href="https://github.com/OpenBushate/bushscript/blob/main/script/Bushscript.java">Bushscript.java</a> into the project.</li>
+      <li><strong>Run the project.</strong> The browser opens automatically.</li>
+    </ol>
+  </section>
+
+  <hr>
+  <footer><p class="caption">Bushscript by <a href="https://github.com/OpenBushate">OpenBushate</a>, released under the MIT license. Built with Hack Club CSS conventions.</p></footer>
+</div>
+</main>
+
+<script src="script.js" defer></script>
+</body>
+</html>
